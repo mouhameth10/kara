@@ -1,0 +1,14 @@
+name: Build and Test
+
+on: [push]  # Déclenche le workflow à chaque push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Utilise l'environnement Ubuntu pour exécuter le job
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # Vérifie le code source du dépôt
+
+      - name: Run tests
+        run: echo "Tests réussis"  # Remplacez ceci par vos commandes de test réelles
